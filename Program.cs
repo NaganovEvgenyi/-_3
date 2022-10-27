@@ -54,7 +54,7 @@ Console.WriteLine("Введите пятизначное число:");
  else
  {
      Console.WriteLine("Введите пятизначное число!!!");
- }*/
+ }
 
  //Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 // A (3,6,8); B (2,1,-7), -> 15.84
@@ -74,4 +74,19 @@ Console.WriteLine("Введите пятизначное число:");
  int z2 = int.Parse(Console.ReadLine()!);
 
  double result = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
- Console.WriteLine($"Расстояние между точками {result}");
+ Console.WriteLine($"Расстояние между точками {result}");*/
+
+
+// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+// 3 -> 1, 8, 27
+// 5 -> 1, 8, 27, 64, 125
+
+Console.WriteLine("Введите число:");
+int num1 = int.Parse(Console.ReadLine()!);
+int i = 1;
+int result = 0;
+while (i <= num1){
+    result = Convert.ToInt32(Math.Pow(i, 3));
+    Console.WriteLine($"{result}");
+    i++;
+}
